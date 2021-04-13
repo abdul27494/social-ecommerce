@@ -1,0 +1,128 @@
+<section class="host-section">
+  <!-- <img src="assets/images/prod-img.png" alt="product image" class="img-fluid"> -->
+  <video width="100%" height="100%" autoplay loop preload="none">
+    <source src="https://assets.mixkit.co/videos/preview/mixkit-portrait-of-a-fashion-woman-with-silver-makeup-39875-small.mp4" type="video/mp4">
+    <source src="https://assets.mixkit.co/videos/preview/mixkit-portrait-of-a-fashion-woman-with-silver-makeup-39875-small.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+  <div class="top-part">
+    <div class="left">
+      <a class="setting"><span class="icon-settigs"></span></a>
+    </div>
+    <div class="center">
+      <p class="buyer-info">
+        <img src="assets/images/user-01.png" alt="user">
+        <img src="assets/images/user-02.png" alt="user">
+        <img src="assets/images/user-02.png" alt="user">
+        <span>20 Potentail Buyers waiting</span>
+      </p>
+    </div>
+    <div class="right">
+      <a class="close"><span class="icon-close"></span></a>
+    </div>
+  </div>
+
+  <div class="right-options">
+    <ul class="option-list">
+      <li>
+        <a href="">
+          <span class="icon-add-user"></span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon-edit"></span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon-flash"></span>
+        </a>
+      </li>
+      <li>
+        <a (click)="openCommentSheet()">
+          <span class="icon-comments"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="bottom-part">
+    <div class="left">
+      <a class="menu" (click)="openProductSheet()"><span class="icon-menu"></span></a>
+    </div>
+    <div class="center">
+      <button class="btn btn-live">Go Live</button>
+    </div>
+    <div class="right">
+      <a class="camera">
+        <span class="icon-camera"></span>
+      </a>
+    </div>
+  </div>
+  <div class="prod-content">
+    <div class="comments">
+      <div class="media">
+        <img src="assets/images/user-01.png" class="align-self-start mr-3" alt="profile image">
+        <div class="media-body">
+          <h5 class="mt-0 name">Oktay </h5>
+          <p class="desc">whats the material?</p>
+        </div>
+      </div>
+      <div class="media">
+        <img src="assets/images/user-02.png" class="align-self-start mr-3" alt="profile image">
+        <div class="media-body">
+          <h5 class="mt-0 name">Jesse </h5>
+          <p class="desc">whats the material?</p>
+        </div>
+      </div>
+      <div class="media">
+        <img src="assets/images/user-02.png" class="align-self-start mr-3" alt="profile image">
+        <div class="media-body">
+          <h5 class="mt-0 name">Aliah Pitts</h5>
+          <p class="desc">What is the length of sleeves on Large?</p>
+        </div>
+      </div>
+    </div>
+    <div class="prod-shown">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+          <div class="media">
+            <img src="assets/images/product.png" class="align-self-start mr-3" alt="profile image">
+            <div class="media-body">
+              <span class="prod-time">04-15</span>
+              <h5 class="mt-0 prod-title">Men’s hexode Jacket </h5>
+              <p class="prod-desc">Designed for an effortless transition from winter to spring, this versatile layer continues</p>
+              <p class="prod-price">$1,050.00 CAD</p>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="media">
+            <img src="assets/images/product.png" class="align-self-start mr-3" alt="profile image">
+            <div class="media-body">
+              <span class="prod-time">04-15</span>
+              <h5 class="mt-0 prod-title">Men’s hexode Jacket </h5>
+              <p class="prod-desc">Designed for an effortless transition from winter to spring, this versatile layer continues</p>
+              <p class="prod-price">$1,050.00 CAD</p>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="media">
+            <img src="assets/images/product.png" class="align-self-start mr-3" alt="profile image">
+            <div class="media-body">
+              <span class="prod-time">04-15</span>
+              <h5 class="mt-0 prod-title">Men’s hexode Jacket </h5>
+              <p class="prod-desc">Designed for an effortless transition from winter to spring, this versatile layer continues</p>
+              <p class="prod-price">$1,050.00 CAD</p>
+            </div>
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+
+    </div>
+  </div>
+</section>
+
+<!-- <button (click)="openBottomSheet()"></button> -->

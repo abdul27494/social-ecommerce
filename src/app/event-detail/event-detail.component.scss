@@ -1,0 +1,136 @@
+@import "src/assets/scss/core/typography.scss";
+@import "src/assets/scss/core/variables.scss";
+
+.event-image {
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  clear: both;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    z-index: 0;
+  }
+
+  .event-text {
+    position: relative;
+    z-index: 1;
+
+    .back {
+      margin: 20px 0 0 20px;
+      color: #fff;
+      font-size: 12px;
+    }
+
+    .event-type {
+      margin: 17px 28px 0 16px;
+      font-family: $font-Roboto;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 30px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+    }
+
+    .add-user {
+      color: inherit;
+      float: right;
+      font-size: 24px;
+    }
+
+    .btn-light-outline {
+      margin: 135px 15px 20px 0;
+      position: relative;
+      float: right;
+      border-color: #fff;
+      padding: 8px 60px;
+      font-family: $font-SfPro;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #fff;
+      border-radius: 0;
+
+      >span {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+    }
+  }
+}
+
+.enent-title {
+  padding: 0 0 4px 0;
+  margin: 0;
+  font-family: $font-SfPro;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: #000000;
+}
+
+.event-date {
+  font-family: $font-SfPro;
+  font-size: 14px;
+}
+
+.row {
+  align-items: center;
+}
+
+.live {
+  font-size: 13px;
+  vertical-align: middle;
+
+}
+
+.full-time {
+  p {
+    width: 45px;
+    height: 45px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    padding: 5px;
+    color: #000;
+    font-family: $font-Roboto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 10px 0 0;
+
+    >span {
+      display: block;
+      font-weight: normal;
+      font-size: 9px;
+      line-height: 11px;
+    }
+  }
+}
+
+.detail {
+  margin: 20px 0;
+  font-family: $font-Roboto;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: justify;
+}
+
+.h2-heading {
+  font-family: $font-Roboto;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+}
+
+.linedup-prod {
+  margin-bottom: 50px;
+  margin-left: -50px !important;
+  padding-left: 15px;
+}

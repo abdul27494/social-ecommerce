@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+// @import '~bootstrap/scss/bootstrap';
+
+html, body { height: 100%; }
+body { margin: 0;  }
+
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+ @import "~bootstrap/scss/bootstrap";
+ @import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+ @import "src/assets/scss/core/typography";
+ @import "src/assets/scss/core/variables"; 
+ @import "src/assets/scss/core/mixins";
+
+ html{
+  font-size: $font-size-root;
+}
+body{
+  font-size: $font-size-base;
+}
+
+ // Core Components
+ @import "src/assets/scss/core/buttons";
+ @import "src/assets/scss/core/checkboxes";
+ @import "src/assets/scss/core/radios";
+ @import "src/assets/scss/core/forms";
+ @import "src/assets/scss/core/navbar";
+ @import "src/assets/scss/core/dropdown";
+ @import "src/assets/scss/core/icons";
+ @import "src/assets/scss/core/custom";
+ @import "src/assets/scss/core/responsive";

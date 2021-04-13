@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+/*these two variables add when you run npm add angular-material*/
+$font-family-sans-serif: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
+$font-family-serif:      'Roboto Slab', 'Times New Roman', serif !default;
+
+
+$font-Roboto: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
+$font-SfPro: 'SF-Pro-Display', 'Helvetica', 'Arial', sans-serif !default;
+
+// New colors
+$body-bg: #fff !default;
+$body-text: #332B2B;
+$primary: #363636;
+
+$field-color: #182125;
+$gray-color:  #9E9E9E !default;
+$gray-color2: #8C8C8C; 
+$black-color: #3C4858 !default;
+
+
+$black: #000000; $rgb-black: "0,0,0" !default;
+$white: #ffffff; $rgb-white: "255,255,255" !default;
+
+
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+$font-size-root:             16px !default;
+//
+$font-size-base:             1rem !default;
+
+$font-size-h1:                 3rem; /*48*/ 
+$font-size-h2:                 1.5rem !default; /*24*/
+$font-size-h3:                 1.25rem; /*22*/
+$font-size-h4:                 1.125rem !default; /*18px*/
+$font-size-h5:                 0.875rem !default; /*14*/
+$font-size-h6:                 0.75rem !default; /*12*/
+$font-paragraph:               0.75rem !default;
+$font-size-navbar:             0.75rem !default;
+$font-size-small:              0.625rem !default;
+$font-field: 0.875rem;
+
+
+// Buttons:
+$bmd-btn-font-size: .875rem !default; // 14px
+$bmd-btn-font-size-lg: 1.25rem !default;
+$bmd-btn-font-size-sm: .6875rem !default; // 11px
+$bmd-btn-margin-bottom: .3125rem !default; // 5px
+
+
+/*     brand Colors              */
+// $brand-primary:              $purple-500 !default;
+// $brand-info:                 $cyan-500 !default;
+// $brand-success:              $green-500 !default;
+// $brand-warning:              $orange-500 !default;
+// $brand-danger:               $red-500 !default;
+// $brand-rose:                 $pink-500 !default;
+// $brand-inverse:              $black-color !default;
+
+// $btn-primary-color:              #fff !default;
+// $btn-primary-bg:                 $brand-primary !default;
+// $btn-primary-border-color:             $btn-primary-bg !default;

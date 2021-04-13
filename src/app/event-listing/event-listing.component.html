@@ -1,0 +1,85 @@
+<mat-drawer-container class="mat-container" hasBackdrop>
+  <mat-drawer #drawer class="mat-sidenav" mode="over">
+    <div class="sidebar-wrapper">
+      <ul class="nav">
+        <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
+          <a class="nav-link" [routerLink]="[menuItem.path]">
+            <i class="material-icons">{{menuItem.icon}}</i>
+            <p>{{menuItem.title}}</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <div class="head">
+      <button type="button" mat-button (click)="drawer.toggle()" class="btn">
+        <span class="icon-hamburger"></span>
+      </button>
+      <div class="right">
+        <a class="notification">icon</a>
+        <span class="user-img">
+          <img src="assets/images/prof-img.png" alt="" />
+        </span>
+      </div>
+    </div>
+    <section class="container-fluid">
+      <div>
+        <h2 class="heading-h2">Event Schedule</h2>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="card event-item mb-3" routerLink="/event-detail">
+            <img src="assets/images/event1.png" class="card-img-top" alt="image">
+            <div class="card-body">
+              <h4 class="card-title">Josephine French Lattice Lace </h4>
+              <div class="card-date">12 April 2021 | 09:00 PM</div>
+
+              <div class="duration">
+                <p class="days">11<span>Days</span></p>
+                <p class="hour">01<span>hours</span></p>
+                <p class="minutes">50<span>minutes</span></p>
+                <p class="seconds">37<span>seconds</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card event-item mb-3" routerLink="/event-detail">
+            <img src="assets/images/event2.png" class="card-img-top" alt="image">
+            <div class="card-body">
+              <h4 class="card-title">Nili Lotan</h4>
+              <div class="card-date">16 April 2021 | 09:00 PM</div>
+
+              <div class="duration">
+                <p class="days">15<span>Days</span></p>
+                <p class="hour">01<span>hours</span></p>
+                <p class="minutes">50<span>minutes</span></p>
+                <p class="seconds">37<span>seconds</span></p>
+              </div>
+            </div>
+          </div>
+     
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card event-item mb-3" routerLink="/event-detail">
+            <img src="assets/images/event3.png" class="card-img-top" alt="image">
+            <div class="card-body">
+              <h4 class="card-title">Nili Lotan</h4>
+              <div class="card-date">16 April 2021 | 09:00 PM</div>
+
+              <div class="duration">
+                <p class="days">15<span>Days</span></p>
+                <p class="hour">01<span>hours</span></p>
+                <p class="minutes">50<span>minutes</span></p>
+                <p class="seconds">37<span>seconds</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</mat-drawer-container>

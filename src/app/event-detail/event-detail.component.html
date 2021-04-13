@@ -1,0 +1,90 @@
+<section>
+  <div class="event-image">
+    <img src="assets/images/default-img-detail.png" alt="" />
+    <div class="event-text">
+      <a class="back"><span class="icon-left-arrow"></span></a>
+      <div class="event-type">
+        Miu Miu
+        <a class="add-user"><span class="icon-add-user"></span></a>
+      </div>
+      <button type="button" class="btn btn-light-outline" (click)="btnClick();">Go Live <span class="icon-right-arrow"></span></button>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <h5 class="enent-title">Heading</h5>
+    <p class="event-date">25 March 2021<span class="event-time">@ 11 PM</span></p>
+
+    <div class="row">
+      <div class="live col-auto">Live In</div>
+      <div class="col-auto full-time">
+        <p class="hour">00<span>hours</span></p>
+        <p class="minutes">05<span>minutes</span></p>
+        <p class="seconds">37<span>seconds</span></p>
+      </div>
+    </div>
+    <p class="detail">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged.
+    </p>
+  </div>
+
+  <div class="lined-prod">
+    <h2 class="h2-heading">
+      Product Lineup
+    </h2>
+    <div class="linedup-prod">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+          <div class="item">
+            <img src="assets/images/def-img-linedup.png" alt="imag" />
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="item">
+            <img src="assets/images/def-img-linedup.png" alt="imag" />
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="item">
+            <img src="assets/images/def-img-linedup.png" alt="imag" />
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="item">
+            <img src="assets/images/def-img-linedup.png" alt="imag" />
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="item">
+            <img src="assets/images/def-img-linedup.png" alt="imag" />
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="item">
+            <img src="assets/images/def-img-linedup.png" alt="imag" />
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+      <!-- <div class="item">
+        <img src="assets/images/def-img-linedup.png" alt="imag" />
+      </div>
+      <div class="item">
+        <img src="assets/images/def-img-linedup.png" alt="imag" />
+      </div>
+      <div class="item">
+        <img src="assets/images/def-img-linedup.png" alt="imag" />
+      </div>
+      <div class="item">
+        <img src="assets/images/def-img-linedup.png" alt="imag" />
+      </div>
+      <div class="item">
+        <img src="assets/images/def-img-linedup.png" alt="imag" />
+      </div>
+      <div class="item">
+        <img src="assets/images/def-img-linedup.png" alt="imag" />
+      </div> -->
+    </div>
+  </div>
+</section>

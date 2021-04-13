@@ -1,0 +1,87 @@
+@import "src/assets/scss/core/typography.scss";
+@import "src/assets/scss/core/variables.scss";
+@import "src/assets/scss/core/mixins.scss";
+@import "src/assets/scss/core/custom.scss";
+.loginbg {
+  background: transparent url("../../assets/images/login-bg.svg") no-repeat left
+    top scroll;
+}
+
+.logo-cont {
+  margin-top: 65px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.heading-h1 {
+  padding-bottom: 5px;
+}
+.heading-h4 {
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+form {
+  .form-group {
+    margin-bottom: 20px;
+
+    .form-control {
+      background: $white;
+      @include border-radius(1px);
+      padding: 12px 15px;
+      font-family: $font-SfPro;
+      font-weight: 400;
+      font-size: $font-field;
+      line-height: 17px;
+      letter-spacing: -0.333333px;
+      color: rgba($field-color, 0.75);
+      height: 40px;
+    }
+  }
+}
+
+.forget {
+  font-family: $font-SfPro;
+  font-weight: normal;
+  font-size: $font-size-h5;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: -0.333333px;
+  color: #000000;
+}
+
+.form-btn {
+  padding-top: 65px;
+
+  .btn-dark {
+    @include border-radius(3px);
+    background: $primary;
+    border: 1px solid $primary;
+    box-sizing: border-box;
+    font-family: $font-Roboto;
+    font-size: $font-field;
+    line-height: 16px;
+    text-align: center;
+    height: 40px;
+  }
+}
+
+.insights {
+  margin-bottom: 30px;
+  .top {
+    margin-bottom: 30px;
+    h2 {
+      margin-bottom: 5px;
+    }
+    h3 {
+      color: $gray-color;
+      font-size: 0.75rem;
+    }
+  }
+}
+.views {
+  .top {
+    .heading-h2 {
+      font-size: 1.2rem;
+    }
+  }
+}

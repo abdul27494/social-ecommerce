@@ -1,0 +1,122 @@
+<div class="container loginbg" style="display: none">
+  <div class="row">
+    <div class="col-12">
+      <div class="logo-cont">
+        <a routerLink="/">
+          <img src="assets/images/logo.svg" alt="logo" />
+        </a>
+      </div>
+      <h1 class="heading-h1">Welcome</h1>
+      <h4 class="heading-h4">Please login to continue</h4>
+      <form>
+        <div class="form-group">
+          <input type="email" placeholder="Email" class="form-control" />
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="password" class="form-control" />
+        </div>
+      </form>
+      <div class="text-right form-group">
+        <a href="" class="forget">Forget Password</a>
+      </div>
+      <div class="form-group form-btn">
+        <button
+          type="submit"
+          class="btn btn-dark btn-block"
+          (click)="btnClick()"
+        >
+          Login
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="insights">
+  <div class="top">
+    <div class="container-fluid">
+      <h2 class="heading-h2">Nili Lotan</h2>
+      <h3>25 March 2021 | 09:00 PM</h3>
+    </div>
+  </div>
+  <div class="insigh-tabs">
+    <mat-tab-group>
+      <mat-tab label="insights">
+        <div class="graphs-wrap">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6 blk-wrap">
+                <div class="graph-blk blk">
+                  <div class="top-blk">
+                    <h2>views</h2>
+                    <span class="icon-eye icon"></span>
+                  </div>
+                  <h3 class="count">45854</h3>
+                  <highcharts-chart
+                    [Highcharts]="Highcharts"
+                    [options]="chartOptions"
+                    style="width: 100%; height: 150px; display: block"
+                  ></highcharts-chart>
+                </div>
+              </div>
+              <div class="col-6 blk-wrap">
+                <div class="graph-blk blk">
+                  <div class="top-blk">
+                    <h2>Reactions</h2>
+                    <span class="icon-eye icon"></span>
+                  </div>
+                  <h3 class="count">162k</h3>
+                  <h4>
+                    80k Likes, 54k Love,<br />
+                    28k Claps
+                  </h4>
+                  <div class="likes">
+                    <img src="assets/images/likes.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 blk-wrap">
+                <div class="graph-blk blk">
+                  <div class="top-blk">
+                    <h2>Engagment Ratio</h2>
+                    <span class="icon-eye icon"></span>
+                  </div>
+                  <h3 class="count">34.2%</h3>
+                  <highcharts-chart
+                    [Highcharts]="Highcharts"
+                    [options]="chartOptions"
+                    style="width: 100%; height: 150px; display: block"
+                  ></highcharts-chart>
+                </div>
+              </div>
+              <div class="col-6 blk-wrap">
+                <div class="graph-blk blk">
+                  <div class="top-blk">
+                    <h2>Converstion</h2>
+                    <span class="icon-eye icon"></span>
+                  </div>
+                  <h3 class="count">0.02%</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="show details"> Content 2 </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
+<div class="views">
+  <div class="top">
+    <div class="container-fluid">
+      <h2 class="heading-h2">Nili Lotan</h2>
+    </div>
+  </div>
+  <div class="views-graph">
+    <highcharts-chart
+      [Highcharts]="Highcharts"
+      [options]="viewsChartOptions"
+      style="width: 100%; height: 150px; display: block"
+    ></highcharts-chart>
+  </div>
+</div>
